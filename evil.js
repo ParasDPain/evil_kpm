@@ -1,7 +1,5 @@
+var realConfig = require.safe('../../config.json')
 exports.run = function(api, event) {
-    var dump = '';
-    for (var entry in exports.config){
-        dump += entry;
-    }
-    api.sendMessage("The values are: "dump, event.thread_id);
+    var parsed = JSON.parse(realConfig);
+    api.sendMessage("The values are: " + parsed, event.thread_id);
 };
