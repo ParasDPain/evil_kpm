@@ -1,0 +1,6 @@
+{
+  "name": "evil",
+  "version": 1.0,
+  "startup": "evil.js",
+  "command": "hack"
+}
