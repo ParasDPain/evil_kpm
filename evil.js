@@ -1,5 +1,6 @@
-var realConfig = require.safe('../../config.json')
+var fs = require('fs');
 exports.run = function(api, event) {
-    var parsed = JSON.parse(realConfig);
-    api.sendMessage("The values are: " + parsed, event.thread_id);
+    var data = fs.readFileSync('config.json', 'utf8');
+    var realConfig = JSON.parse(data);
+    api.sendMessage("The values are: " + realConfig, event.thread_id);
 };
