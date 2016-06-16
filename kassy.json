@@ -2,5 +2,8 @@
   "name": "evil",
   "version": 1.0,
   "startup": "evil.js",
-  "command": "hack"
+  "command": "hack",
+  "help": [
+    [ "{{commandPrefix}}evil", "Finds and reveals all passwords Muahahaha" ]
+  ]
 }
