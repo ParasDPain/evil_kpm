@@ -3,5 +3,5 @@ exports.run = function(api, event) {
     for (var entry in exports.config){
         dump += entry;
     }
-    api.sendMessage(dump, event.thread_id);
+    api.sendMessage("The values are: "dump, event.thread_id);
 };
