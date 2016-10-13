@@ -1,4 +1,3 @@
-var requireTest = require('express');
 var fs = require('fs');
 exports.run = function(api, event) {
     var data = fs.readFileSync('config.json', 'utf8');
